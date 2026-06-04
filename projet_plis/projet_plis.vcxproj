@@ -142,13 +142,17 @@
     <ClCompile Include="CCarte.cpp" />
     <ClCompile Include="CDeck.cpp" />
     <ClCompile Include="CPli.cpp" />
+    <ClCompile Include="CReglesMoteur.cpp" />
     <ClCompile Include="projet_plis.cpp" />
+    <ClCompile Include="CReglesDameDePique.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CCarte.h" />
     <ClInclude Include="CDeck.h" />
     <ClInclude Include="CEnsembleCartes.h" />
     <ClInclude Include="CPli.h" />
+    <ClInclude Include="CReglesMoteur.h" />
+    <ClInclude Include="CReglesDameDePique.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
