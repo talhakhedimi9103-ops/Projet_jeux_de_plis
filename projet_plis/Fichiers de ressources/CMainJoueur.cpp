@@ -16,5 +16,5 @@ void CMainJoueur::retirer(CCarte* carte)
 
 vector<CCarte*> CMainJoueur::getCartes()
 {
-	return vector<CCarte*>();
+	return vCartes;
 }
