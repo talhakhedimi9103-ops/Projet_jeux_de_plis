@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include "CCarte.h"
 using namespace std;
 
 class CJoueur {
@@ -10,6 +11,6 @@ private:
 	int score;
 	StrategieJoueur strategie;
 public:
-	Carte jouerCarte(Pli& pliActuel);
+	CCarte jouerCarte(Pli& pliActuel);
 	void ajouterPoints(int pts);
 };
