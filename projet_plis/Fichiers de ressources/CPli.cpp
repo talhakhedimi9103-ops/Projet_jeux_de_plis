@@ -12,6 +12,12 @@ void CPli::vider()
 
 void CPli::DonnerCartesVainqueur(CJoueur & Joueur)
 {
-	Joueur.
+	CMain MainaDonner;
+	for (int i = 0, i < paire_joueur_cartes.size(); i + ) {
+		for (int j = 0; j < paire_joueur_cartes[i].second.size();j++) {
+			MainaDonner.Ajouter(paire_joueur_cartes[i].second[j]);
+		}
+	}
+	Joueur.AjouterCartes(MainaDonner);
 }
 

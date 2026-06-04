@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include "CCarte.h"
+#include "CMainJouer.h"
 #include "CEnsembleCartes.h"
 using namespace std;
 
@@ -15,4 +16,5 @@ public:
 	CCarte jouerCarte(CEnsembleCartes & pliActuel);
 	void ajouterPoints(int pts);
 	CEnsembleCartes getMain();
+	void AjouterCartes(CEnsembleCartes& Cartes);
 };
