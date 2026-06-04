@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="CCarte.cpp" />
     <ClCompile Include="CDeck.cpp" />
+    <ClCompile Include="CPli.cpp" />
     <ClCompile Include="projet_plis.cpp" />
   </ItemGroup>
   <ItemGroup>
