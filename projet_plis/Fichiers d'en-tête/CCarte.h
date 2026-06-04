@@ -15,5 +15,4 @@ public:
 	string getCouleur();
 	void setValeur(int valeur);
 	void setCouleur(string couleur);
-	cout << "test" << endl;
 };
