@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include "CCarte.h"
+#include "CEnsembleCartes.h"
 using namespace std;
 
 class CJoueur {
@@ -11,6 +12,7 @@ private:
 	int score;
 	StrategieJoueur strategie;
 public:
-	CCarte jouerCarte(Pli& pliActuel);
+	CCarte jouerCarte(CEnsembleCartes & pliActuel);
 	void ajouterPoints(int pts);
+	CEnsembleCartes getMain();
 };

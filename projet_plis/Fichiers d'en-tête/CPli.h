@@ -1,5 +1,6 @@
 #pragma once
 #include "CEnsembleCartes.h"
+#include "CJoueur.h"
 #include <vector>
 
 class CPli {
@@ -16,5 +17,5 @@ public:
 	void vider();
 
 	//donner cartes au vainqueur
-	CEnsembleCartes vainqueur();
+	void DonnerCartesVainqueur(CJoueur & Joueur);
 };
