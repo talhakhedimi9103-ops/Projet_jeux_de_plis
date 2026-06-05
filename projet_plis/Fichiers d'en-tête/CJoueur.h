@@ -5,6 +5,9 @@
 #include "CMainJouer.h"
 #include "CEnsembleCartes.h"
 #include "CMainJoueur.h"
+#include "CReglesMoteur.h"
+#include "CStrategieJoueur.h"
+
 using namespace std;
 
 class CJoueur {
@@ -12,10 +15,13 @@ private:
 	string nomJoueur;
 	CMainJoueur mainJoueur;
 	int score;
-	StrategieJoueur strategie;
+	CReglesMoteur regle;
+	bool JoueurReel;
+
 public:
-	CCarte jouerCarte(CPli & pliActuel);
-	void ajouterPoints(int pts);
-	CEnsembleCartes getMain();
-	void Ajouter(CEnsembleCartes & Cartes)
+	CCarte jouerCarte(CEnsembleCartes& pliActuel);
+	void ajouterScore(int score);
+	CMainJoueur getMain();
+	void Ajouter(CEnsembleCartes& Cartes);
+	void getScore();
 };
