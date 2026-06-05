@@ -14,7 +14,7 @@ private:
 	int score;
 	StrategieJoueur strategie;
 public:
-	CCarte jouerCarte(CEnsembleCartes & pliActuel);
+	CCarte jouerCarte(CPli & pliActuel);
 	void ajouterPoints(int pts);
 	CEnsembleCartes getMain();
 	void Ajouter(CEnsembleCartes & Cartes)

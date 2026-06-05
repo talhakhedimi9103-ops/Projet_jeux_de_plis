@@ -25,4 +25,6 @@ public:
 	vector<CCarte*> getCartes();
 
 	void AjouterCartes(CCartes& Carte);
+
+	int getNbCartes(); { return vCartes.size(); }
 };

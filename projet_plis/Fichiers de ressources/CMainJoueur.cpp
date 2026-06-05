@@ -3,10 +3,10 @@
 void CMainJoueur::retirer(CCarte* carte)
 {
 	int cpt = 0;
-	while (vCartes[cpt] != cartes && vCartes.size() <= cpt) {
+	while (vCartes[cpt] != carte && vCartes.size() <= cpt) {
 		cpt += 1;
 	}
-	if (vCartes[cpt] == cartes) {
+	if (vCartes[cpt] == carte) {
 		vCartes.erase(vCartes.begin() + cpt);	
 	}
 	else {
