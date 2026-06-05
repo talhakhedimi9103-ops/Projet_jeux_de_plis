@@ -5,7 +5,7 @@
 class CEnsembleCartes {
 	//ATTRIBUTS
 protected :
-	vector<CCarte> vCartes;
+	vector<*CCarte> vCartes;
 
 	//METHODES
 

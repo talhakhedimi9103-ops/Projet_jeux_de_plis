@@ -1,23 +1,34 @@
 #include "CPli.h"
 
-void CPli::ajouterCartes(CJoueur& Joueur, CEnsembleCartes& Cartes)
+CPli::CPli(vector<CJoueur> vJoueur)
 {
-	paire_joueur_cartes.push_back(Joueur, Cartes);
+	for (int i = 0; i < vJoueur.size(); i++) {
+		map_j_c.insert({ vJoueur[i],CCarte{} });
+	}
+	
+}
+
+void CPli::ajouterCartes(CJoueur& Joueur, CCarte& Carte)
+{
+	map_j_c.insert({ Joueur, Carte });
 }
 
 void CPli::vider()
 {
-	paire_joueur_cartes.clear();
+	map<CJoueur, CCarte>::iterator iterateur = map_j_c.begin();
+	for (iterateur; iterateur != map_j_c.end(); iterateur++) {
+		iterateur->second = CCarte();
+	}
 }
 
 void CPli::DonnerCartesVainqueur(CJoueur & Joueur)
 {
 	CMainJoueur MainaDonner;
-	for (int i = 0, i < paire_joueur_cartes.size(); i + ) {
-		for (int j = 0; j < paire_joueur_cartes[i].second.size();j++) {
-			MainaDonner.Ajouter(paire_joueur_cartes[i].second[j]);
-		}
+	map<CJoueur, CCarte>::iterator iterateur = map_j_c.begin();
+	for (iterateur; iterateur != map_j_c.end(); iterateur++) {
+		MainaDonner.AjouterCarte(iterateur->second);
 	}
 	Joueur.AjouterCartes(MainaDonner);
+	vider();
 }
 
