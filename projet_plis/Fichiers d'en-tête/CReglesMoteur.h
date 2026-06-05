@@ -3,7 +3,6 @@
 
 #include <vector>
 #include <memory>
-#include 
 using namespace std;
 
 class CReglesMoteur {

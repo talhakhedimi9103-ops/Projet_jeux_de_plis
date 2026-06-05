@@ -17,5 +17,7 @@ public:
 	CCarte jouerCarte(CEnsembleCartes & pliActuel);
 	void ajouterPoints(int pts);
 	CEnsembleCartes getMain();
-	void Ajouter(CEnsembleCartes & Cartes)
+	void Ajouter(CEnsembleCartes& Cartes);
+	int GetScore(CJoueur& joueur);
+	void addScore(CJoueur& joueur, int score);
 };
