@@ -23,4 +23,6 @@ public:
 	*Objectif : retourner les cartes de la main du joueur
 	*/
 	vector<CCarte*> getCartes();
+
+	void AjouterCartes(CCartes& Carte);
 };

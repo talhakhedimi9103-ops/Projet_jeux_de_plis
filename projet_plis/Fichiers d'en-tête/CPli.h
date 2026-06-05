@@ -2,18 +2,24 @@
 #include "CEnsembleCartes.h"
 #include "CJoueur.h"
 #include <vector>
+#include <map>
 
 class CPli {
 	//ATTRIBUTS
 private :
-	vector<pair<CJoueur, CEnsembleCartes>> paire_joueur_cartes;
+	map<CJoueur,CCarte> map_j_c;
 
-//METHODES
+
 public:
-	//Ajouter des carte par joueur
-	void ajouterCartes(CJoueur& Joueur, CEnsembleCartes & Cartes);
+	//CONSTRUCTEURS DESTRUCTEUR
+	void CPli(vector<CJoueur> vJoueur);
 
-	// vider completement le pli actuel
+	//METHODES
+	
+	//Ajouter des carte par joueur
+	void ajouterCartes(CJoueur& Joueur, CCarte & Carte);
+
+	// vider completement le pli actuel en gardant les joueurs
 	void vider();
 
 	//donner cartes au vainqueur

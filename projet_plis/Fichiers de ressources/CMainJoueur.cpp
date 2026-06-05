@@ -18,3 +18,8 @@ vector<CCarte*> CMainJoueur::getCartes()
 {
 	return vCartes;
 }
+
+void CMainJoueur::AjouterCartes(CCartes& Carte)
+{
+	vCartes.push_back(Carte);
+}
